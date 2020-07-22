@@ -1,25 +1,26 @@
 import React from 'react';
-import {Row, Col} from 'react-bootstrap';
+import {Row, Col, Container} from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
 const Header = ({name, designation, organisation}) => (
-  <React.Fragment>
+  <Container>
     <Row>
       <Col xs={12}>
-        <h1 className="display-1">{name}</h1>
+        <h1 className="display-2">{name}</h1>
       </Col>
     </Row>
-    <Row>
-      <Col xs={12}>
+    <Row className="flex-nowrap align-items-baseline">
+      <Col xs="auto">
         <p className="h3">{designation}</p>
       </Col>
-    </Row>
-    <Row>
-      <Col xs={12}>
-        <p className="h5">{organisation}</p>
+      <Col xs="auto" style={{padding: 0}}>
+        <p className="h4">@</p>
+      </Col>
+      <Col xs="auto">
+        <p className="h4">{organisation}</p>
       </Col>
     </Row>
-  </React.Fragment>
+  </Container>
 );
 
 Header.prototype = {
