@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AACA,qBACI,eAAgB,CAChB,yBACF","file":"main.f4729ad0.chunk.css","sourcesContent":["@import '~antd/dist/antd.css';\n.site-layout-content {\n    background: #fff;\n    height : calc(100vh - 55px);\n  }"]}
